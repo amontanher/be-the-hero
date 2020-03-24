@@ -25,10 +25,7 @@ Types of Request Parameters
 */
 
 app.post("/users", (req, res) => {
-  console.log(req.body);
-  return res.json({
-    id: 21
-  });
+  return res.json({ id: 1 });
 });
 
 app.listen(3333);

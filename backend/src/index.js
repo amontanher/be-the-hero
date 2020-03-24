@@ -1,13 +1,12 @@
 const express = require("express");
+const routes = require("./routes");
 
 const app = express();
 
 app.use(express.json());
+app.use(routes);
 
-app.get("/", (req, res) => {
-  return res.send("Home /");
-});
-
+app.listen(3333);
 /*
 Types of Request Parameters
 
@@ -30,9 +29,3 @@ Types of Request Parameters
  * OR
  * Query Builder: table('users').select('*').where() => KNEX.JS
  */
-
-app.post("/users", (req, res) => {
-  return res.json({ id: 1 });
-});
-
-app.listen(3333);

@@ -24,6 +24,13 @@ Types of Request Parameters
     Node understands and does not return undefined
 */
 
+/**
+ * Database
+ * Install Driver: "SELECT * FROM USERS"
+ * OR
+ * Query Builder: table('users').select('*').where() => KNEX.JS
+ */
+
 app.post("/users", (req, res) => {
   return res.json({ id: 1 });
 });

@@ -21,7 +21,7 @@ export default function Logon() {
       localStorage.setItem("ongId", id);
       localStorage.setItem("ongName", response.data.name);
 
-      history.pushState("/profile");
+      history.push("/profile");
     } catch (error) {
       alert("Falha no login");
     }

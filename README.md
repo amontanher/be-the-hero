@@ -2,6 +2,7 @@
 
 ## Backend
 Swagger
+
 ![](readmefiles/swagger.png)
 ## Frontend
 
@@ -21,3 +22,7 @@ Swagger
 React Native
 
 ![](readmefiles/mobile.gif)
+
+## Certificate of Completion
+
+![](readmefiles/cc.png)
